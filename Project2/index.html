@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan default forecast</title>
+</head>
+<body>
+    <h1>Loan default forecast</h1>
+    <form action="/predict" method="post">
+        <label for="grade"> Risk score:</label>
+        <input type="text" id="grade" name="grade"><br><br>
+
+        <label for="loan_amnt">total amount:</label>
+        <input type="number" id="loan_amnt" name="loan_amnt"><br><br>
+
+        <label for="term">loan term:</label>
+        <input type="number" id="term" name="term"><br><br>
+
+        <label for="interest_rate">Interest ratio:</label>
+        <input type="number" id="interest_rate" name="interest_rate"><br><br>
+
+        <label for="installment">Installment:</label>
+        <input type="number" id="installment" name="installment"><br><br>
+
+        <label for="employmentTitle">Occupation title:</label>
+        <input type="number" id="employmentTitle" name="employmentTitle"><br><br>
+
+        <label for="annualIncome">Annual income:</label>
+        <input type="number" id="annualIncome" name="annualIncome"><br><br>
+        <label for="isDefault">Default background:</label>
+        <input type="number" id="isDefault" name="isDefault"><br><br>
+    
+      
+        <label for="purpose">indicates the purpose of the loan:</label>
+        <input type="number" id="purpose" name="purpose"><br><br> 
+        
+        <label for="dti">Debt-to-income ratio:</label>
+        <input type="number" id="dti" name="dti"><br><br>
+
+
+        <label for="ficoRangeLow">Penalty amount (low):</label>
+        <input type="number" id="ficoRangeLow" name="ficoRangeLow"><br><br>
+
+        <label for="openAcc"> Open account:</label>
+        <input type="number" id="openAcc" name="openAcc"><br><br>
+
+        <label for="revolBal">reversal threshold:</label>
+        <input type="number" id="revolBal" name="revolBal"><br><br>
+
+        <label for="totalAcc">total account number:</label>
+        <input type="number" id="totalAcc" name="totalAcc"><br><br>
+        <label for="title">title </label>:</label>
+        <input type="number" id="title" name="title"><br><br>
+
+
+        <input type="submit" value="predict">
+    </form>
+</body>
+</html>
